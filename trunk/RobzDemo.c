@@ -21,13 +21,7 @@ void waitForStartup(){
 	SetServoPosition(SERVO_1,140);
 	Wait(10);
 }
-char codeSelect(){
-    unsigned char num;
-
-
-
-	return 0;
-}
+char codeSelect(){ return GPIOPinRead(GPIO_PORTA_BASE, GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_4 | GPIO_PIN_5) }
 int main(void)
 {		
 	LockoutProtection();
