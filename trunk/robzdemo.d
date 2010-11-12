@@ -4,5 +4,5 @@ robzdemo.o: RobzDemo.h
 robzdemo.o: ..\StellarisWare\utils/uartstdio.h
 robzdemo.o: ..\StellarisWare\driverlib/uart.h
 robzdemo.o: ..\StellarisWare\driverlib/sysctl.h
-robzdemo.o: ..\RASLib\include\RASLib/init.h
-robzdemo.o: ..\RASLib\include\RASLib/encoder.h
+robzdemo.o: RASLib/init.h
+robzdemo.o: RASLib/encoder.h

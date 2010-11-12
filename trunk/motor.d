@@ -1,0 +1,9 @@
+motor.o: RASLib\motor.c
+motor.o: ..\StellarisWare\inc/hw_types.h
+motor.o: ..\StellarisWare\inc/hw_memmap.h
+motor.o: ..\StellarisWare\driverlib/gpio.h
+motor.o: ..\StellarisWare\driverlib/pin_map.h
+motor.o: ..\StellarisWare\driverlib/sysctl.h
+motor.o: ..\StellarisWare\driverlib/pwm.h
+motor.o: RASLib\init.h
+motor.o: RASLib\motor.h

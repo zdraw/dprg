@@ -1,0 +1,9 @@
+servo.o: RASLib\servo.c
+servo.o: ..\StellarisWare\inc/hw_types.h
+servo.o: ..\StellarisWare\inc/hw_memmap.h
+servo.o: ..\StellarisWare\driverlib/gpio.h
+servo.o: ..\StellarisWare\driverlib/pin_map.h
+servo.o: ..\StellarisWare\driverlib/sysctl.h
+servo.o: ..\StellarisWare\driverlib/pwm.h
+servo.o: RASLib\init.h
+servo.o: RASLib\servo.h

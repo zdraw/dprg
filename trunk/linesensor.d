@@ -1,0 +1,12 @@
+linesensor.o: RASLib\linesensor.c
+linesensor.o: RASLib\linesensor.h
+linesensor.o: ..\StellarisWare\inc/hw_types.h
+linesensor.o: ..\StellarisWare\inc/hw_ints.h
+linesensor.o: ..\StellarisWare\inc/hw_memmap.h
+linesensor.o: ..\StellarisWare\driverlib/gpio.h
+linesensor.o: ..\StellarisWare\driverlib/pin_map.h
+linesensor.o: ..\StellarisWare\driverlib/sysctl.h
+linesensor.o: ..\StellarisWare\driverlib/interrupt.h
+linesensor.o: ..\StellarisWare\driverlib/timer.h
+linesensor.o: RASLib\timer.h
+linesensor.o: RASLib\init.h
