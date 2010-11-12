@@ -1,1 +1,1 @@
--c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I..\StellarisWare -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Luminary" -o "motor.o" --omf_browse "motor.crf" --depend "motor.d" "RASLib\motor.c"
+-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I..\StellarisWare -I "C:\Program Files\Keil\ARM\INC" -I "C:\Program Files\Keil\ARM\INC\Luminary" -o "motor.o" --omf_browse "motor.crf" --depend "motor.d" "RASLib\motor.c"

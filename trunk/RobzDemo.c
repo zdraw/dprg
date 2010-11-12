@@ -42,72 +42,24 @@ int main(void)
 	InitializeEncoders(true, false);
 
     // Now we start the fun
-	while(1){
-		switch(codeSelect()){
-			case 0:
-				break;
-			case 1:
-				break;
-			case 2:
-				break;
-			case 3:
-				break;
-			case 4:
-				break;
-			case 5:
-				break;
-			case 6:
-				break;
-			case 7:
-				break;
-			case 8:
-				break;
-		}	
-	}
-	
-	
-			
-	//while(1) {	
-	/*	UARTprintf("\nROBZ DEMO\n");
-		UARTprintf("  0=UART Demo\n  1=Motor Demo\n");
-		UARTprintf("  2=Servo Demo\n  3=Line Sensor\n");
-		UARTprintf("  4=IR Sensor Demo\n  5=Encoders Demo\n");
-		UARTprintf("Motor PWM Pulses Per Second: %d",g_ulPWMTicksPerSecond / 256);
-		//UARTprintf("enc0:%d  enc1:%d      \r\n",GetEncoderCount(ENCODER_0),GetEncoderCount(ENCODER_1));
-		
-		UARTprintf(">> ");
-		ch = getc();
-		putc(ch);
-		UARTprintf("\n");
-
-		if (ch == '0') {
-			UARTprintf("\nUART Demo\n");
-			uartDemo();	 
-		}
-		else if (ch == '1') {
-			UARTprintf("\nMotor Demo\n");
-			initMotors();
-			motorDemo(); 
-		}
-		else if (ch == '2') {
-			UARTprintf("\nServo Demo\n");
-			initServo();
-			servoDemo();   
-		}
-		else if (ch == '3') {			   
-			UARTprintf("\nLine Sensor Demo\n");
-			initLineSensor();		  
-			lineSensorDemo();	  
-		}
-		else if (ch == '4') {	   
-			UARTprintf("\nIR Sensor Demo\n");
-			initIRSensor();
-			IRSensorDemo();	 
-		}
-		else if (ch == '5') {
-			UARTprintf("\nEncoders Demo\n");
-			initEncoders();
-			encoderDemo();
-		}	   
-	}		   */
+	switch(codeSelect()){
+		case 1:
+		    lineFollow();
+			break;
+		case 2:
+		    squareDance();
+			break;
+		/*case 4:
+		    figureEight();
+			break;*/
+		case 9:
+		    tableTop(EDGE);
+			break;
+		case 10:			   
+		    tableTop(CUBE);
+			break;
+		case 12:			   
+		    tableTop(BOX);
+			break;
+	}	
 }
