@@ -5,14 +5,75 @@
 #include "RASLib/init.h"
 #include "RASLib/encoder.h"
 
+
+void waitForStartup(){
+	// Start w/ gate up
+	SetServoPosition(SERVO_1,255);
+	Wait(500);
+
+    // Wait for hand to cover IR
+	while(GetADCValue(0) < 500);
+	Wait(100);
+
+    // Wait for hand to leave IR
+	while(GetADCValue(0) > 500);
+	
+	SetServoPosition(SERVO_1,140);
+	Wait(10);
+}
+char codeSelect(){
+    unsigned char num;
+
+
+
+	return 0;
+}
 int main(void)
-{	
-	char ch;	  	 
+{		
 	LockoutProtection();
 	InitializeMCU();
-	initUART();	
-	InitializeEncoders(false, false);		
-	while(1) {	
+	InitializeUART();	
+	InitializeServos();
+
+	// Initialize ADC 
+    SysCtlPeripheralEnable(SYSCTL_PERIPH_ADC);
+	InitializeADC(0);
+	InitializeADC(1);
+
+	// Wave hand to start run
+	waitForStartup();
+
+	// Init motors (whine...)
+	InitializeMotors(true, true);
+	InitializeEncoders(true, false);
+
+    // Now we start the fun
+	while(1){
+		switch(codeSelect()){
+			case 0:
+				break;
+			case 1:
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5:
+				break;
+			case 6:
+				break;
+			case 7:
+				break;
+			case 8:
+				break;
+		}	
+	}
+	
+	
+			
+	//while(1) {	
 	/*	UARTprintf("\nROBZ DEMO\n");
 		UARTprintf("  0=UART Demo\n  1=Motor Demo\n");
 		UARTprintf("  2=Servo Demo\n  3=Line Sensor\n");
@@ -53,6 +114,6 @@ int main(void)
 			UARTprintf("\nEncoders Demo\n");
 			initEncoders();
 			encoderDemo();
-		}	   */
-	}
+		}	   
+	}		   */
 }
