@@ -11,14 +11,14 @@ int main(void)
 	LockoutProtection();
 	InitializeMCU();
 	initUART();	
-	InitializeEncoders(false, false);		
+	InitializeEncoders(false, false);																						    
+	
 	while(1) {	
-	/*	UARTprintf("\nROBZ DEMO\n");
+		UARTprintf("\nROBZ DEMO\n");
 		UARTprintf("  0=UART Demo\n  1=Motor Demo\n");
 		UARTprintf("  2=Servo Demo\n  3=Line Sensor\n");
 		UARTprintf("  4=IR Sensor Demo\n  5=Encoders Demo\n");
-		UARTprintf("Motor PWM Pulses Per Second: %d",g_ulPWMTicksPerSecond / 256);
-		//UARTprintf("enc0:%d  enc1:%d      \r\n",GetEncoderCount(ENCODER_0),GetEncoderCount(ENCODER_1));
+		UARTprintf("enc0:%d  enc1:%d      \r\n",GetEncoderCount(ENCODER_0),GetEncoderCount(ENCODER_1));
 		
 		UARTprintf(">> ");
 		ch = getc();
@@ -53,6 +53,6 @@ int main(void)
 			UARTprintf("\nEncoders Demo\n");
 			initEncoders();
 			encoderDemo();
-		}	   */
+		}
 	}
 }

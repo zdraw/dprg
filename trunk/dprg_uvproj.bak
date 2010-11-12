@@ -159,7 +159,7 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>4098</DriverSelection>
+            <DriverSelection>4097</DriverSelection>
           </Flash1>
           <Flash2>BIN\lmidk-agdi.dll</Flash2>
           <Flash3>"" ()</Flash3>
@@ -345,7 +345,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\StellarisWare;..\RASLib\include</IncludePath>
+              <IncludePath>..\StellarisWare;</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -441,11 +441,6 @@
           <GroupName>External</GroupName>
           <Files>
             <File>
-              <FileName>raslib.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>..\RASLib\Debug\raslib.lib</FilePath>
-            </File>
-            <File>
               <FileName>driverlib.lib</FileName>
               <FileType>4</FileType>
               <FilePath>..\StellarisWare\driverlib\rvmdk\driverlib.lib</FilePath>
@@ -454,6 +449,76 @@
               <FileName>uartstdio.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\StellarisWare\utils\uartstdio.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>RASLib</GroupName>
+          <Files>
+            <File>
+              <FileName>encoder.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\RASLib\encoder.c</FilePath>
+            </File>
+            <File>
+              <FileName>init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\RASLib\init.c</FilePath>
+            </File>
+            <File>
+              <FileName>linesensor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\RASLib\linesensor.c</FilePath>
+            </File>
+            <File>
+              <FileName>motor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\RASLib\motor.c</FilePath>
+            </File>
+            <File>
+              <FileName>servo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\RASLib\servo.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\RASLib\timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>encoder.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\RASLib\encoder.h</FilePath>
+            </File>
+            <File>
+              <FileName>init.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\RASLib\init.h</FilePath>
+            </File>
+            <File>
+              <FileName>linesensor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\RASLib\linesensor.h</FilePath>
+            </File>
+            <File>
+              <FileName>motor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\RASLib\motor.h</FilePath>
+            </File>
+            <File>
+              <FileName>servo.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\RASLib\servo.h</FilePath>
+            </File>
+            <File>
+              <FileName>timer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\RASLib\timer.h</FilePath>
+            </File>
+            <File>
+              <FileName>uart.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\RASLib\uart.h</FilePath>
             </File>
           </Files>
         </Group>

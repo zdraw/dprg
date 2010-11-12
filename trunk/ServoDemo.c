@@ -18,6 +18,7 @@ void servoDemo(void) {
 	
 	{
 		unsigned char position = 0;
+		unsigned char temp = 0;
 		char newline = 13;
 		char ch;
 		
@@ -32,10 +33,11 @@ void servoDemo(void) {
 				position+=10;
 			else if (ch == 'd')
 				position-=10;
-			SetServoPosition(SERVO_0, position); 
-			SetServoPosition(SERVO_1, position);
-			SetServoPosition(SERVO_2, position);
-			SetServoPosition(SERVO_3, position);
+			temp = 0.45*position + 140;
+			SetServoPosition(SERVO_0, temp); 
+			SetServoPosition(SERVO_1, temp);
+			SetServoPosition(SERVO_2, temp);
+			SetServoPosition(SERVO_3, temp);
 			UARTprintf("%u  ",position);	 
 			ch = getc();
 		}

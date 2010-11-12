@@ -5,4 +5,5 @@ encoder.o: ..\StellarisWare\inc/hw_memmap.h
 encoder.o: ..\StellarisWare\driverlib/interrupt.h
 encoder.o: ..\StellarisWare\driverlib/sysctl.h
 encoder.o: ..\StellarisWare\driverlib/gpio.h
+encoder.o: ..\StellarisWare\utils/uartstdio.h
 encoder.o: RASLib\encoder.h

@@ -24,7 +24,7 @@
 ### ADS-LD Output File: 'dprg.axf'
 ### ADS-LD Command File: 'dprg.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'dprg.lnp', Handle=0x000004B0
+### Creating CmdFile 'dprg.lnp', Handle=0x00000310
 ### Writing '.lnp' file
 ### ADS-LD Command file 'dprg.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

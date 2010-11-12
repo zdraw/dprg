@@ -3,7 +3,8 @@
 #include "inc/hw_memmap.h"
 #include "driverlib/interrupt.h"
 #include "driverlib/sysctl.h"
-#include "driverlib/gpio.h"
+#include "driverlib/gpio.h"	
+#include "utils/uartstdio.h"	// input/output over UART
 
 #include "encoder.h"
 
@@ -11,13 +12,13 @@ volatile static encoder_count_t enc0 = 0, enc1 = 0;
 static signed dir0, dir1;		// direction to count (up/down) for each encoder
 
 void InitializeEncoders(tBoolean invert0, tBoolean invert1)
-{
+{	  
 	// enable and configure the GPIO pins
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOB);	// enable the peripheral
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOC);	// enable the peripheral
 	GPIOPinTypeGPIOInput(GPIO_PORTB_BASE, GPIO_PIN_4 | GPIO_PIN_6);	// configure pins as inputs
 	GPIOPinTypeGPIOInput(GPIO_PORTC_BASE, GPIO_PIN_5 | GPIO_PIN_6);	// configure pins as inputs
-	
+									
 	// enable and configure the interrupts
 	IntEnable(INT_GPIOB);					// enable interrupts for the periph
 	IntEnable(INT_GPIOC);					// enable interrupts for the periph
@@ -25,7 +26,8 @@ void InitializeEncoders(tBoolean invert0, tBoolean invert1)
 	GPIOIntTypeSet(GPIO_PORTC_BASE, GPIO_PIN_5 | GPIO_PIN_6, GPIO_BOTH_EDGES);	// configure the interrupts
 	GPIOPinIntEnable(GPIO_PORTB_BASE, GPIO_PIN_4 | GPIO_PIN_6);	// enable the interrupt for the pins
 	GPIOPinIntEnable(GPIO_PORTC_BASE, GPIO_PIN_5 | GPIO_PIN_6);	// enable the interrupt for the pins
-	
+			 
+	UARTprintf("encoders whee\n");								
 	dir0 = invert0 ? -1 : 1;
 	dir1 = invert1 ? -1 : 1;
 }
@@ -75,7 +77,7 @@ void EncoderInterruptHandler(void)
 	unsigned port;
 	signed dir;
 	volatile encoder_count_t *p_encCount;
-	
+				 					
 	if((GPIOPinIntStatus(port=GPIO_PORTC_BASE, false) & (pin=GPIO_PIN_5)))
 	{
 		// encoder 0 fired!
