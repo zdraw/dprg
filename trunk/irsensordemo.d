@@ -1,0 +1,9 @@
+irsensordemo.o: IRSensorDemo.c
+irsensordemo.o: C:\working_dir\Robotathon2010\StellarisWare\inc/hw_types.h
+irsensordemo.o: C:\working_dir\Robotathon2010\StellarisWare\inc/hw_memmap.h
+irsensordemo.o: C:\working_dir\Robotathon2010\StellarisWare\utils/uartstdio.h
+irsensordemo.o: C:\working_dir\Robotathon2010\StellarisWare\driverlib/uart.h
+irsensordemo.o: C:\working_dir\Robotathon2010\StellarisWare\driverlib/sysctl.h
+irsensordemo.o: C:\working_dir\Robotathon2010\StellarisWare\driverlib/gpio.h
+irsensordemo.o: C:\working_dir\Robotathon2010\StellarisWare\driverlib/adc.h
+irsensordemo.o: dprg.h
