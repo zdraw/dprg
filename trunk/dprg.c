@@ -10,10 +10,10 @@
 #include "RASLib/uart.h"
 #include "RASLib/motor.h"
 #include "RASLib/encoder.h"
+#include "TableTop.h"
 
 
 extern void LineFollow(void);
-
 
 void InitializeADC(char a) {
 	ADCSequenceConfigure(ADC_BASE,a, ADC_TRIGGER_PROCESSOR, 0);
@@ -30,6 +30,9 @@ long GetADCValue(char a) {
 }
 
 void waitForStartup(){
+	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
+	GPIOPinTypeGPIOInput(GPIO_PORTA_BASE, GPIO_PIN_5 | GPIO_PIN_4 | GPIO_PIN_3 | GPIO_PIN_2 );
+
 	// Start w/ gate up
 	SetServoPosition(SERVO_1,255);
 	Wait(500);
@@ -78,7 +81,7 @@ int main(void)
 		    figureEight();
 			break;*/
 		case 9:
-		    //tableTop(EDGE);
+		    crossTable();
 			break;
 		case 10:			   
 		    //tableTop(CUBE);
