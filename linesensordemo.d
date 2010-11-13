@@ -1,0 +1,14 @@
+linesensordemo.o: LineSensorDemo.c
+linesensordemo.o: C:\working_dir\Robotathon2010\StellarisWare\inc/hw_types.h
+linesensordemo.o: C:\working_dir\Robotathon2010\StellarisWare\inc/hw_memmap.h
+linesensordemo.o: C:\working_dir\Robotathon2010\StellarisWare\utils/uartstdio.h
+linesensordemo.o: C:\working_dir\Robotathon2010\StellarisWare\driverlib/uart.h
+linesensordemo.o: C:\working_dir\Robotathon2010\StellarisWare\driverlib/sysctl.h
+linesensordemo.o: C:\working_dir\Robotathon2010\StellarisWare\driverlib/gpio.h
+linesensordemo.o: C:\working_dir\Robotathon2010\RASLib\include\RASLib/linesensor.h
+linesensordemo.o: C:\working_dir\Robotathon2010\StellarisWare\inc/hw_ints.h
+linesensordemo.o: C:\working_dir\Robotathon2010\StellarisWare\driverlib/pin_map.h
+linesensordemo.o: C:\working_dir\Robotathon2010\StellarisWare\driverlib/interrupt.h
+linesensordemo.o: C:\working_dir\Robotathon2010\StellarisWare\driverlib/timer.h
+linesensordemo.o: C:\working_dir\Robotathon2010\RASLib\include\RASLib/timer.h
+linesensordemo.o: dprg.h

@@ -1,0 +1,9 @@
+servodemo.o: ServoDemo.c
+servodemo.o: C:\working_dir\Robotathon2010\StellarisWare\inc/hw_types.h
+servodemo.o: C:\working_dir\Robotathon2010\StellarisWare\inc/hw_memmap.h
+servodemo.o: C:\working_dir\Robotathon2010\StellarisWare\utils/uartstdio.h
+servodemo.o: C:\working_dir\Robotathon2010\StellarisWare\driverlib/gpio.h
+servodemo.o: C:\working_dir\Robotathon2010\StellarisWare\driverlib/sysctl.h
+servodemo.o: C:\working_dir\Robotathon2010\RASLib\include\RASLib/servo.h
+servodemo.o: C:\working_dir\Robotathon2010\StellarisWare\driverlib/pwm.h
+servodemo.o: dprg.h
