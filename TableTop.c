@@ -2,12 +2,12 @@
 #include "inc/hw_memmap.h"             // input/output over UART
 #include "inc/hw_types.h"		// tBoolean
 #include "utils/uartstdio.h"	// input/output over UART
-#include "driverlib/uart.h"		// input/output over UART
 #include "RASLib/init.h"
 #include "driverlib/adc.h"		// ADC functions
 #include "RASLib/encoder.h"
 #include "RASLib/motor.h"
 #include "driverlib/uart.h"
+#include "RASLib/timer.h"
 
 #include "motorPID.h"
 #include "sonar.h"
@@ -64,6 +64,7 @@ void CubeAttack(void) {
 	Initialize_Sonar();
 	UARTprintf("Testing Sonar\n");
 	while(1) {
-		UARTprintf("Sonar: %d\r", Sonar_Get());
+		UARTprintf("Sonar: %d\n", Sonar_Get());
+		Wait(10);
 	}
 }
