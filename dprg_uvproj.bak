@@ -345,7 +345,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>C:\working_dir\Robotathon2010\StellarisWare;C:\working_dir\Robotathon2010\RASLib\include</IncludePath>
+              <IncludePath>..\StellarisWare;..\RASLib\include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -386,34 +386,9 @@
           <GroupName>Source</GroupName>
           <Files>
             <File>
-              <FileName>UARTDemo.c</FileName>
+              <FileName>linefollow.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\UARTDemo.c</FilePath>
-            </File>
-            <File>
-              <FileName>MotorDemo.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\MotorDemo.c</FilePath>
-            </File>
-            <File>
-              <FileName>ServoDemo.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\ServoDemo.c</FilePath>
-            </File>
-            <File>
-              <FileName>LineSensorDemo.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\LineSensorDemo.c</FilePath>
-            </File>
-            <File>
-              <FileName>IRSensorDemo.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\IRSensorDemo.c</FilePath>
-            </File>
-            <File>
-              <FileName>EncoderDemo.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\EncoderDemo.c</FilePath>
+              <FilePath>.\linefollow.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -421,19 +396,19 @@
           <GroupName>External</GroupName>
           <Files>
             <File>
-              <FileName>raslib.lib</FileName>
-              <FileType>4</FileType>
-              <FilePath>C:\working_dir\Robotathon2010\RASLib\Debug\raslib.lib</FilePath>
+              <FileName>uartstdio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\StellarisWare\utils\uartstdio.c</FilePath>
             </File>
             <File>
               <FileName>driverlib.lib</FileName>
               <FileType>4</FileType>
-              <FilePath>C:\working_dir\Robotathon2010\StellarisWare\driverlib\rvmdk\driverlib.lib</FilePath>
+              <FilePath>..\StellarisWare\driverlib\rvmdk\driverlib.lib</FilePath>
             </File>
             <File>
-              <FileName>uartstdio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>C:\working_dir\Robotathon2010\StellarisWare\utils\uartstdio.c</FilePath>
+              <FileName>raslib.lib</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\RASLib\Debug\raslib.lib</FilePath>
             </File>
           </Files>
         </Group>
@@ -449,11 +424,6 @@
               <FileName>dprg.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\dprg.c</FilePath>
-            </File>
-            <File>
-              <FileName>dprg.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\dprg.h</FilePath>
             </File>
           </Files>
         </Group>

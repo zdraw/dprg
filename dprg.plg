@@ -130,3 +130,11 @@ TableTop.h:   unsigned long ADC0_BASE;
 TableTop.h:                 ^
 TableTop.h: dprg.c: 0 warnings, 1 error
 Target not created
+Build target 'Target 1'
+compiling TableTop.c...
+TableTop.c(15): error:  #20: identifier "ADC0_BASE" is undefined
+TableTop.c:     ADCProcessorTrigger(ADC0_BASE, 1); 
+TableTop.c:                         ^
+TableTop.c: TableTop.c: 0 warnings, 1 error
+compiling dprg.c...
+Target not created
