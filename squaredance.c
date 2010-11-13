@@ -30,15 +30,18 @@ void UpdateMotors(signed long error)
 
 void SquareDance(void) {
 	UARTprintf("WHEEEE\n");
-	SetMotorPowers(MAX, MAX);
-	
+	AccelerateToMax();
+	PresetEncoderCounts(0, 0);
 	while(1) {
 		signed long enc1 = GetEncoderCount(ENCODER_0);
 		signed long enc2 = GetEncoderCount(ENCODER_1);
 
 		UpdateMotors((enc2-enc1)/1000);
 
-		UARTprintf("Encoder 1: %d, Encoder 2: %d\n", enc1, enc2);
+		if(enc1 > 56000 || enc2 > 56000) {
+			SetMotorPowers(0,0);
+			while(1);
+		}
 		
 	}
 }

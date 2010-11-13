@@ -11,3 +11,4 @@ tabletop.o: ..\RASLib\include\RASLib/encoder.h
 tabletop.o: ..\RASLib\include\RASLib/motor.h
 tabletop.o: ..\StellarisWare\driverlib/pwm.h
 tabletop.o: motorPID.h
+tabletop.o: sonar.h

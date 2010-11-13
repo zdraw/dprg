@@ -89,10 +89,11 @@ int main(void)
 		    crossTable();
 			break;
 		case 10:			   
-		    //tableTop(CUBE);
+		    CubeAttack();
 			break;
 		case 12:			   
 		    //tableTop(BOX);
 			break;
-	}	
+	}
+	while(1);	
 }
