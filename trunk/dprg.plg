@@ -3,26 +3,627 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Documents and Settings\RAS\Desktop\DPRG\dprg\dprg.uvproj
+C:\Users\Raz\Desktop\DPRG\dprg\dprg.uvproj
 Project File Date:  11/12/2010
 
 <h2>Output:</h2>
 Build target 'Target 1'
-compiling UARTDemo.c...
-compiling MotorDemo.c...
-compiling ServoDemo.c...
-compiling LineSensorDemo.c...
-compiling IRSensorDemo.c...
-compiling EncoderDemo.c...
+compiling linefollow.c...
+linefollow.c(1): error:  #5: cannot open source input file "inc/hw_types.h": No such file or directory
+compiling uartstdio.c...
+uartstdio.c: Error:  #5: cannot open source input file "C:\working_dir\Robotathon2010\StellarisWare\utils\uartstdio.c": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(10): error:  #5: cannot open source input file "LineFollow.h": No such file or directory
+compiling uartstdio.c...
+uartstdio.c: Error:  #5: cannot open source input file "C:\working_dir\Robotathon2010\StellarisWare\utils\uartstdio.c": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(10): error:  #5: cannot open source input file "LineFollow.h": No such file or directory
+compiling uartstdio.c...
+uartstdio.c: Error:  #5: cannot open source input file "C:\working_dir\Robotathon2010\StellarisWare\utils\uartstdio.c": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(101): warning:  #223-D: function "InitializeUART" declared implicitly
+linefollow.c(119): warning:  #1-D: last line of file ends without a newline
+compiling uartstdio.c...
+uartstdio.c: Error:  #5: cannot open source input file "C:\working_dir\Robotathon2010\StellarisWare\utils\uartstdio.c": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(101): warning:  #223-D: function "InitializeUART" declared implicitly
+compiling uartstdio.c...
+uartstdio.c: Error:  #5: cannot open source input file "C:\working_dir\Robotathon2010\StellarisWare\utils\uartstdio.c": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(102): warning:  #223-D: function "InitializeUART" declared implicitly
+compiling uartstdio.c...
+uartstdio.c: Error:  #5: cannot open source input file "C:\working_dir\Robotathon2010\StellarisWare\utils\uartstdio.c": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(102): warning:  #223-D: function "InitializeUART" declared implicitly
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(2): error:  #5: cannot open source input file "RobzDemo.h": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(102): warning:  #223-D: function "InitializeUART" declared implicitly
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(10): warning:  #223-D: function "SetServoPosition" declared implicitly
+dprg.c(10): error:  #20: identifier "SERVO_1" is undefined
+dprg.c(11): warning:  #223-D: function "Wait" declared implicitly
+dprg.c(14): warning:  #223-D: function "GetADCValue" declared implicitly
+dprg.c(24): warning:  #223-D: function "ADCSequenceConfigure" declared implicitly
+dprg.c(24): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(24): error:  #20: identifier "ADC_TRIGGER_PROCESSOR" is undefined
+dprg.c(25): warning:  #223-D: function "ADCSequenceStepConfigure" declared implicitly
+dprg.c(25): error:  #20: identifier "ADC_CTL_IE" is undefined
+dprg.c(25): error:  #20: identifier "ADC_CTL_END" is undefined
+dprg.c(25): error:  #20: identifier "ADC_CTL_CH0" is undefined
+dprg.c(26): warning:  #223-D: function "ADCSequenceEnable" declared implicitly
+dprg.c(29): error:  #159: declaration is incompatible with previous "GetADCValue" (declared at line 14)
+dprg.c(31): warning:  #223-D: function "ADCProcessorTrigger" declared implicitly
+dprg.c(31): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(32): warning:  #223-D: function "ADCIntStatus" declared implicitly
+dprg.c(33): warning:  #223-D: function "ADCSequenceDataGet" declared implicitly
+dprg.c(38): warning:  #223-D: function "GPIOPinRead" declared implicitly
+dprg.c(38): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(38): error:  #20: identifier "GPIO_PIN_2" is undefined
+dprg.c(38): error:  #20: identifier "GPIO_PIN_3" is undefined
+dprg.c(38): error:  #20: identifier "GPIO_PIN_4" is undefined
+dprg.c(38): error:  #20: identifier "GPIO_PIN_5" is undefined
+dprg.c(38): error:  #65: expected a ";"
+dprg.c(43): warning:  #223-D: function "InitializeUART" declared implicitly
+dprg.c(44): warning:  #223-D: function "InitializeServos" declared implicitly
+dprg.c(55): warning:  #223-D: function "InitializeMotors" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(102): warning:  #223-D: function "InitializeUART" declared implicitly
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(10): warning:  #223-D: function "SetServoPosition" declared implicitly
+dprg.c(10): error:  #20: identifier "SERVO_1" is undefined
+dprg.c(11): warning:  #223-D: function "Wait" declared implicitly
+dprg.c(14): warning:  #223-D: function "GetADCValue" declared implicitly
+dprg.c(24): warning:  #223-D: function "ADCSequenceConfigure" declared implicitly
+dprg.c(24): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(24): error:  #20: identifier "ADC_TRIGGER_PROCESSOR" is undefined
+dprg.c(25): warning:  #223-D: function "ADCSequenceStepConfigure" declared implicitly
+dprg.c(25): error:  #20: identifier "ADC_CTL_IE" is undefined
+dprg.c(25): error:  #20: identifier "ADC_CTL_END" is undefined
+dprg.c(25): error:  #20: identifier "ADC_CTL_CH0" is undefined
+dprg.c(26): warning:  #223-D: function "ADCSequenceEnable" declared implicitly
+dprg.c(29): error:  #159: declaration is incompatible with previous "GetADCValue" (declared at line 14)
+dprg.c(31): warning:  #223-D: function "ADCProcessorTrigger" declared implicitly
+dprg.c(31): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(32): warning:  #223-D: function "ADCIntStatus" declared implicitly
+dprg.c(33): warning:  #223-D: function "ADCSequenceDataGet" declared implicitly
+dprg.c(38): warning:  #223-D: function "GPIOPinRead" declared implicitly
+dprg.c(38): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(38): error:  #20: identifier "GPIO_PIN_2" is undefined
+dprg.c(38): error:  #20: identifier "GPIO_PIN_3" is undefined
+dprg.c(38): error:  #20: identifier "GPIO_PIN_4" is undefined
+dprg.c(38): error:  #20: identifier "GPIO_PIN_5" is undefined
+dprg.c(38): error:  #65: expected a ";"
+dprg.c(43): warning:  #223-D: function "InitializeUART" declared implicitly
+dprg.c(44): warning:  #223-D: function "InitializeServos" declared implicitly
+dprg.c(55): warning:  #223-D: function "InitializeMotors" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(102): warning:  #223-D: function "InitializeUART" declared implicitly
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(10): warning:  #223-D: function "SetServoPosition" declared implicitly
+dprg.c(10): error:  #20: identifier "SERVO_1" is undefined
+dprg.c(11): warning:  #223-D: function "Wait" declared implicitly
+dprg.c(14): warning:  #223-D: function "GetADCValue" declared implicitly
+dprg.c(24): warning:  #223-D: function "ADCSequenceConfigure" declared implicitly
+dprg.c(24): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(24): error:  #20: identifier "ADC_TRIGGER_PROCESSOR" is undefined
+dprg.c(25): warning:  #223-D: function "ADCSequenceStepConfigure" declared implicitly
+dprg.c(25): error:  #20: identifier "ADC_CTL_IE" is undefined
+dprg.c(25): error:  #20: identifier "ADC_CTL_END" is undefined
+dprg.c(25): error:  #20: identifier "ADC_CTL_CH0" is undefined
+dprg.c(26): warning:  #223-D: function "ADCSequenceEnable" declared implicitly
+dprg.c(29): error:  #159: declaration is incompatible with previous "GetADCValue" (declared at line 14)
+dprg.c(31): warning:  #223-D: function "ADCProcessorTrigger" declared implicitly
+dprg.c(31): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(32): warning:  #223-D: function "ADCIntStatus" declared implicitly
+dprg.c(33): warning:  #223-D: function "ADCSequenceDataGet" declared implicitly
+dprg.c(38): warning:  #223-D: function "GPIOPinRead" declared implicitly
+dprg.c(38): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(38): error:  #20: identifier "GPIO_PIN_2" is undefined
+dprg.c(38): error:  #20: identifier "GPIO_PIN_3" is undefined
+dprg.c(38): error:  #20: identifier "GPIO_PIN_4" is undefined
+dprg.c(38): error:  #20: identifier "GPIO_PIN_5" is undefined
+dprg.c(38): error:  #65: expected a ";"
+dprg.c(43): warning:  #223-D: function "InitializeUART" declared implicitly
+dprg.c(44): warning:  #223-D: function "InitializeServos" declared implicitly
+dprg.c(55): warning:  #223-D: function "InitializeMotors" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(102): warning:  #223-D: function "InitializeUART" declared implicitly
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(2): error:  #5: cannot open source input file "RobzDemo.h": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(102): warning:  #223-D: function "InitializeUART" declared implicitly
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(9): warning:  #223-D: function "SetServoPosition" declared implicitly
+dprg.c(9): error:  #20: identifier "SERVO_1" is undefined
+dprg.c(10): warning:  #223-D: function "Wait" declared implicitly
+dprg.c(13): warning:  #223-D: function "GetADCValue" declared implicitly
+dprg.c(23): warning:  #223-D: function "ADCSequenceConfigure" declared implicitly
+dprg.c(23): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(23): error:  #20: identifier "ADC_TRIGGER_PROCESSOR" is undefined
+dprg.c(24): warning:  #223-D: function "ADCSequenceStepConfigure" declared implicitly
+dprg.c(24): error:  #20: identifier "ADC_CTL_IE" is undefined
+dprg.c(24): error:  #20: identifier "ADC_CTL_END" is undefined
+dprg.c(24): error:  #20: identifier "ADC_CTL_CH0" is undefined
+dprg.c(25): warning:  #223-D: function "ADCSequenceEnable" declared implicitly
+dprg.c(28): error:  #159: declaration is incompatible with previous "GetADCValue" (declared at line 13)
+dprg.c(30): warning:  #223-D: function "ADCProcessorTrigger" declared implicitly
+dprg.c(30): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(31): warning:  #223-D: function "ADCIntStatus" declared implicitly
+dprg.c(32): warning:  #223-D: function "ADCSequenceDataGet" declared implicitly
+dprg.c(37): warning:  #223-D: function "GPIOPinRead" declared implicitly
+dprg.c(37): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(37): error:  #20: identifier "GPIO_PIN_2" is undefined
+dprg.c(37): error:  #20: identifier "GPIO_PIN_3" is undefined
+dprg.c(37): error:  #20: identifier "GPIO_PIN_4" is undefined
+dprg.c(37): error:  #20: identifier "GPIO_PIN_5" is undefined
+dprg.c(37): error:  #65: expected a ";"
+dprg.c(42): warning:  #223-D: function "InitializeUART" declared implicitly
+dprg.c(43): warning:  #223-D: function "InitializeServos" declared implicitly
+dprg.c(54): warning:  #223-D: function "InitializeMotors" declared implicitly
+dprg.c(55): warning:  #223-D: function "InitializeEncoders" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(102): warning:  #223-D: function "InitializeUART" declared implicitly
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(5): error:  #5: cannot open source input file "RASLib/adc.h": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(102): warning:  #223-D: function "InitializeUART" declared implicitly
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(10): warning:  #223-D: function "SetServoPosition" declared implicitly
+dprg.c(10): error:  #20: identifier "SERVO_1" is undefined
+dprg.c(11): warning:  #223-D: function "Wait" declared implicitly
+dprg.c(14): warning:  #223-D: function "GetADCValue" declared implicitly
+dprg.c(24): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(29): error:  #159: declaration is incompatible with previous "GetADCValue" (declared at line 14)
+dprg.c(31): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(38): warning:  #223-D: function "GPIOPinRead" declared implicitly
+dprg.c(38): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(38): error:  #20: identifier "GPIO_PIN_2" is undefined
+dprg.c(38): error:  #20: identifier "GPIO_PIN_3" is undefined
+dprg.c(38): error:  #20: identifier "GPIO_PIN_4" is undefined
+dprg.c(38): error:  #20: identifier "GPIO_PIN_5" is undefined
+dprg.c(38): error:  #65: expected a ";"
+dprg.c(43): warning:  #223-D: function "InitializeUART" declared implicitly
+dprg.c(44): warning:  #223-D: function "InitializeServos" declared implicitly
+dprg.c(55): warning:  #223-D: function "InitializeMotors" declared implicitly
+dprg.c(56): warning:  #223-D: function "InitializeEncoders" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(102): warning:  #223-D: function "InitializeUART" declared implicitly
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(11): warning:  #223-D: function "SetServoPosition" declared implicitly
+dprg.c(11): error:  #20: identifier "SERVO_1" is undefined
+dprg.c(12): warning:  #223-D: function "Wait" declared implicitly
+dprg.c(15): warning:  #223-D: function "GetADCValue" declared implicitly
+dprg.c(25): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(30): error:  #159: declaration is incompatible with previous "GetADCValue" (declared at line 15)
+dprg.c(32): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(39): warning:  #223-D: function "GPIOPinRead" declared implicitly
+dprg.c(39): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(39): error:  #20: identifier "GPIO_PIN_2" is undefined
+dprg.c(39): error:  #20: identifier "GPIO_PIN_3" is undefined
+dprg.c(39): error:  #20: identifier "GPIO_PIN_4" is undefined
+dprg.c(39): error:  #20: identifier "GPIO_PIN_5" is undefined
+dprg.c(39): error:  #65: expected a ";"
+dprg.c(44): warning:  #223-D: function "GPIOPinTypeUART" declared implicitly
+dprg.c(44): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(44): error:  #20: identifier "GPIO_PIN_0" is undefined
+dprg.c(44): error:  #20: identifier "GPIO_PIN_1" is undefined
+dprg.c(45): warning:  #223-D: function "InitializeServos" declared implicitly
+dprg.c(56): warning:  #223-D: function "InitializeMotors" declared implicitly
+dprg.c(57): warning:  #223-D: function "InitializeEncoders" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(102): warning:  #223-D: function "InitializeUART" declared implicitly
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(12): warning:  #223-D: function "SetServoPosition" declared implicitly
+dprg.c(12): error:  #20: identifier "SERVO_1" is undefined
+dprg.c(13): warning:  #223-D: function "Wait" declared implicitly
+dprg.c(16): warning:  #223-D: function "GetADCValue" declared implicitly
+dprg.c(26): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(31): error:  #159: declaration is incompatible with previous "GetADCValue" (declared at line 16)
+dprg.c(33): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(40): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(40): error:  #65: expected a ";"
+dprg.c(45): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(46): warning:  #223-D: function "InitializeServos" declared implicitly
+dprg.c(57): warning:  #223-D: function "InitializeMotors" declared implicitly
+dprg.c(58): warning:  #223-D: function "InitializeEncoders" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(102): warning:  #223-D: function "InitializeUART" declared implicitly
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(14): warning:  #223-D: function "Wait" declared implicitly
+dprg.c(17): warning:  #223-D: function "GetADCValue" declared implicitly
+dprg.c(27): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(32): error:  #159: declaration is incompatible with previous "GetADCValue" (declared at line 17)
+dprg.c(34): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(41): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(41): error:  #65: expected a ";"
+dprg.c(46): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(58): warning:  #223-D: function "InitializeMotors" declared implicitly
+dprg.c(59): warning:  #223-D: function "InitializeEncoders" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(102): warning:  #223-D: function "InitializeUART" declared implicitly
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(14): warning:  #223-D: function "Wait" declared implicitly
+dprg.c(17): warning:  #223-D: function "GetADCValue" declared implicitly
+dprg.c(27): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(32): error:  #159: declaration is incompatible with previous "GetADCValue" (declared at line 17)
+dprg.c(34): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(41): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(41): error:  #65: expected a ";"
+dprg.c(46): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(58): warning:  #223-D: function "InitializeMotors" declared implicitly
+dprg.c(59): warning:  #223-D: function "InitializeEncoders" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(102): warning:  #223-D: function "InitializeUART" declared implicitly
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(14): warning:  #223-D: function "Wait" declared implicitly
+dprg.c(17): warning:  #223-D: function "GetADCValue" declared implicitly
+dprg.c(27): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(32): error:  #159: declaration is incompatible with previous "GetADCValue" (declared at line 17)
+dprg.c(34): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(41): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(41): error:  #65: expected a ";"
+dprg.c(46): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(58): warning:  #223-D: function "InitializeMotors" declared implicitly
+dprg.c(59): warning:  #223-D: function "InitializeEncoders" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(115): warning:  #9-D: nested comment is not allowed
+linefollow.c(119): error:  #169: expected a declaration
+linefollow.c(121): warning:  #1-D: last line of file ends without a newline
+linefollow.c(121): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(14): warning:  #223-D: function "Wait" declared implicitly
+dprg.c(17): warning:  #223-D: function "GetADCValue" declared implicitly
+dprg.c(27): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(32): error:  #159: declaration is incompatible with previous "GetADCValue" (declared at line 17)
+dprg.c(34): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(41): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(41): error:  #65: expected a ";"
+dprg.c(46): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(58): warning:  #223-D: function "InitializeMotors" declared implicitly
+dprg.c(59): warning:  #223-D: function "InitializeEncoders" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(119): warning:  #1-D: last line of file ends without a newline
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(14): warning:  #223-D: function "Wait" declared implicitly
+dprg.c(17): warning:  #223-D: function "GetADCValue" declared implicitly
+dprg.c(27): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(32): error:  #159: declaration is incompatible with previous "GetADCValue" (declared at line 17)
+dprg.c(34): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(41): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(41): error:  #65: expected a ";"
+dprg.c(46): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(58): warning:  #223-D: function "InitializeMotors" declared implicitly
+dprg.c(59): warning:  #223-D: function "InitializeEncoders" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(119): warning:  #1-D: last line of file ends without a newline
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(17): warning:  #223-D: function "GetADCValue" declared implicitly
+dprg.c(27): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(32): error:  #159: declaration is incompatible with previous "GetADCValue" (declared at line 17)
+dprg.c(34): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(41): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(41): error:  #65: expected a ";"
+dprg.c(46): warning:  #223-D: function "InitializeUART" declared implicitly
+dprg.c(58): warning:  #223-D: function "InitializeMotors" declared implicitly
+dprg.c(59): warning:  #223-D: function "InitializeEncoders" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(119): warning:  #1-D: last line of file ends without a newline
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(18): warning:  #223-D: function "GetADCValue" declared implicitly
+dprg.c(28): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(33): error:  #159: declaration is incompatible with previous "GetADCValue" (declared at line 18)
+dprg.c(35): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(42): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(42): error:  #65: expected a ";"
+dprg.c(47): warning:  #223-D: function "InitializeUART" declared implicitly
+dprg.c(59): warning:  #223-D: function "InitializeMotors" declared implicitly
+dprg.c(60): warning:  #223-D: function "InitializeEncoders" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(119): warning:  #1-D: last line of file ends without a newline
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(19): error:  #5: cannot open source input file "dprg.h": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(119): warning:  #1-D: last line of file ends without a newline
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(26): warning:  #223-D: function "GetADCValue" declared implicitly
+dprg.c(41): error:  #159: declaration is incompatible with previous "GetADCValue" (declared at line 26)
+dprg.c(50): error:  #65: expected a ";"
+dprg.c(55): warning:  #223-D: function "InitializeUART" declared implicitly
+dprg.c(67): warning:  #223-D: function "InitializeMotors" declared implicitly
+dprg.c(68): warning:  #223-D: function "InitializeEncoders" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(119): warning:  #1-D: last line of file ends without a newline
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(16): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(23): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(46): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(46): error:  #65: expected a ";"
+dprg.c(51): warning:  #223-D: function "InitializeUART" declared implicitly
+dprg.c(63): warning:  #223-D: function "InitializeMotors" declared implicitly
+dprg.c(64): warning:  #223-D: function "InitializeEncoders" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(119): warning:  #1-D: last line of file ends without a newline
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(5): error:  #5: cannot open source input file "driverlib/memmap.h": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(119): warning:  #1-D: last line of file ends without a newline
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(5): error:  #5: cannot open source input file "inc/memmap.h": No such file or directory
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(119): warning:  #1-D: last line of file ends without a newline
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(17): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(24): error:  #20: identifier "ADC_BASE" is undefined
+dprg.c(47): error:  #20: identifier "GPIO_PORTA_BASE" is undefined
+dprg.c(47): error:  #65: expected a ";"
+dprg.c(52): warning:  #223-D: function "InitializeUART" declared implicitly
+dprg.c(64): warning:  #223-D: function "InitializeMotors" declared implicitly
+dprg.c(65): warning:  #223-D: function "InitializeEncoders" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(119): warning:  #1-D: last line of file ends without a newline
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(47): error:  #65: expected a ";"
+dprg.c(52): warning:  #223-D: function "InitializeUART" declared implicitly
+dprg.c(64): warning:  #223-D: function "InitializeMotors" declared implicitly
+dprg.c(65): warning:  #223-D: function "InitializeEncoders" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(119): warning:  #1-D: last line of file ends without a newline
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(48): error:  #65: expected a ";"
+dprg.c(65): warning:  #223-D: function "InitializeMotors" declared implicitly
+dprg.c(66): warning:  #223-D: function "InitializeEncoders" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(119): warning:  #1-D: last line of file ends without a newline
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(49): error:  #65: expected a ";"
+dprg.c(67): warning:  #223-D: function "InitializeEncoders" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(119): warning:  #1-D: last line of file ends without a newline
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(50): error:  #65: expected a ";"
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(119): warning:  #1-D: last line of file ends without a newline
 compiling uartstdio.c...
 assembling Startup.s...
 compiling dprg.c...
 linking...
-Program Size: Code=6540 RO-data=236 RW-data=24 ZI-data=296  
+dprg.axf: error: L6002U: Could not open file ..\StellarisWare\driverlib\rvmdk\raslib.lib: No such file or directory
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(119): warning:  #1-D: last line of file ends without a newline
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+linking...
+dprg.axf: Error: L6218E: Undefined symbol InitializeEncoders (referred from linefollow.o).
+dprg.axf: Error: L6218E: Undefined symbol InitializeLineSensor (referred from linefollow.o).
+dprg.axf: Error: L6218E: Undefined symbol InitializeMCU (referred from linefollow.o).
+dprg.axf: Error: L6218E: Undefined symbol InitializeMotors (referred from linefollow.o).
+dprg.axf: Error: L6218E: Undefined symbol LockoutProtection (referred from linefollow.o).
+dprg.axf: Error: L6218E: Undefined symbol ReadLineSensor (referred from linefollow.o).
+dprg.axf: Error: L6218E: Undefined symbol SetDischargeTime (referred from linefollow.o).
+dprg.axf: Error: L6218E: Undefined symbol SetMotorPowers (referred from linefollow.o).
+dprg.axf: Error: L6218E: Undefined symbol EncoderInterruptHandler (referred from startup.o).
+dprg.axf: Error: L6218E: Undefined symbol LSIntHandler (referred from startup.o).
+dprg.axf: Error: L6218E: Undefined symbol InitializeServos (referred from dprg.o).
+dprg.axf: Error: L6218E: Undefined symbol SetServoPosition (referred from dprg.o).
+dprg.axf: Error: L6218E: Undefined symbol Wait (referred from dprg.o).
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+linefollow.c(119): warning:  #1-D: last line of file ends without a newline
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+linking...
+Program Size: Code=4980 RO-data=236 RW-data=24 ZI-data=296  
+"dprg.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling linefollow.c...
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+linking...
+Program Size: Code=4980 RO-data=236 RW-data=24 ZI-data=296  
 "dprg.axf" - 0 Error(s), 0 Warning(s).
-Load "C:\\Documents and Settings\\RAS\\Desktop\\DPRG\\dprg\\dprg.AXF" 
-Warning: OSC to JTAG clock ratio violation - JTAG clock has been automatically adjusted to comply.
-Connecting: Mode=JTAG, Speed=600000Hz
-Erase Done.
-Programming Done.
-Verify OK.
+Build target 'Target 1'
+compiling linefollow.c...
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+linking...
+Program Size: Code=4980 RO-data=236 RW-data=24 ZI-data=296  
+"dprg.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling linefollow.c...
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(18): warning:  #223-D: function "ADCSequenceConfigure" declared implicitly
+dprg.c(18): error:  #20: identifier "ADC_TRIGGER_PROCESSOR" is undefined
+dprg.c(19): warning:  #223-D: function "ADCSequenceStepConfigure" declared implicitly
+dprg.c(19): error:  #20: identifier "ADC_CTL_IE" is undefined
+dprg.c(19): error:  #20: identifier "ADC_CTL_END" is undefined
+dprg.c(19): error:  #20: identifier "ADC_CTL_CH0" is undefined
+dprg.c(20): warning:  #223-D: function "ADCSequenceEnable" declared implicitly
+dprg.c(25): warning:  #223-D: function "ADCProcessorTrigger" declared implicitly
+dprg.c(26): warning:  #223-D: function "ADCIntStatus" declared implicitly
+dprg.c(27): warning:  #223-D: function "ADCSequenceDataGet" declared implicitly
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(66): warning:  #223-D: function "InitializeEncoders" declared implicitly
+linking...
+Program Size: Code=4980 RO-data=236 RW-data=24 ZI-data=296  
+"dprg.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling linefollow.c...
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(65): warning:  #223-D: function "InitializeMotors" declared implicitly
+linking...
+Program Size: Code=4980 RO-data=236 RW-data=24 ZI-data=296  
+"dprg.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling linefollow.c...
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(48): warning:  #223-D: function "GPIOPinRead" declared implicitly
+dprg.c(48): error:  #20: identifier "GPIO_PIN_2" is undefined
+dprg.c(48): error:  #20: identifier "GPIO_PIN_3" is undefined
+dprg.c(48): error:  #20: identifier "GPIO_PIN_4" is undefined
+dprg.c(48): error:  #20: identifier "GPIO_PIN_5" is undefined
+dprg.c(53): warning:  #223-D: function "GPIOPinTypeUART" declared implicitly
+dprg.c(53): error:  #20: identifier "GPIO_PIN_0" is undefined
+dprg.c(53): error:  #20: identifier "GPIO_PIN_1" is undefined
+Target not created
+Build target 'Target 1'
+compiling linefollow.c...
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+dprg.c(53): warning:  #223-D: function "UARTStdioInit" declared implicitly
+linking...
+Program Size: Code=4980 RO-data=236 RW-data=24 ZI-data=296  
+"dprg.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling linefollow.c...
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+linking...
+Program Size: Code=4980 RO-data=236 RW-data=24 ZI-data=296  
+"dprg.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling linefollow.c...
+compiling uartstdio.c...
+assembling Startup.s...
+compiling dprg.c...
+linking...
+Program Size: Code=4980 RO-data=236 RW-data=24 ZI-data=296  
+"dprg.axf" - 0 Error(s), 0 Warning(s).
