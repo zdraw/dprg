@@ -1,1 +1,1 @@
--c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -IC:\working_dir\Robotathon2010\StellarisWare -IC:\working_dir\Robotathon2010\RASLib\include -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Luminary" -o "dprg.o" --omf_browse "dprg.crf" --depend "dprg.d" "dprg.c"
+-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I..\StellarisWare -I..\RASLib\include -I "C:\Keil\ARM\INC" -I "C:\Keil\ARM\INC\Luminary" -o "dprg.o" --omf_browse "dprg.crf" --depend "dprg.d" "dprg.c"

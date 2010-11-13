@@ -1,10 +1,33 @@
-#include "inc/hw_types.h"		// tBoolean
-#include "RobzDemo.h"
-#include "utils/uartstdio.h"	// input/output over UART
-#include "driverlib/uart.h"		// input/output over UART
+#include "inc/hw_types.h"               // tBoolean
+#include "inc/hw_memmap.h"             // input/output over UART
+#include "utils/uartstdio.h"    // input/output over UART
+#include "driverlib/uart.h"             // input/output over UART
+#include "driverlib/gpio.h"             // input/output over UART
+#include "driverlib/adc.h"
 #include "RASLib/init.h"
+#include "RASLib/Timer.h"             // input/output over UART
+#include "RASLib/servo.h"
+#include "RASLib/uart.h"
+#include "RASLib/motor.h"
 #include "RASLib/encoder.h"
 
+
+extern void LineFollow(void);
+
+
+void InitializeADC(char a) {
+	ADCSequenceConfigure(ADC_BASE,a, ADC_TRIGGER_PROCESSOR, 0);
+	ADCSequenceStepConfigure(ADC_BASE, a, 0, ADC_CTL_IE | ADC_CTL_END | ADC_CTL_CH0);
+	ADCSequenceEnable(ADC_BASE, a);
+}
+
+long GetADCValue(char a) {
+	unsigned long ADCValue = 0;
+	ADCProcessorTrigger(ADC_BASE, a ); 
+	while(!ADCIntStatus(ADC_BASE, a, false)); 
+	ADCSequenceDataGet(ADC_BASE, a, &ADCValue);
+	return ADCValue;
+}
 
 void waitForStartup(){
 	// Start w/ gate up
@@ -21,22 +44,9 @@ void waitForStartup(){
 	SetServoPosition(SERVO_1,140);
 	Wait(10);
 }
-void InitializeADC(char a) {
-	ADCSequenceConfigure(ADC_BASE,a, ADC_TRIGGER_PROCESSOR, 0);
-	ADCSequenceStepConfigure(ADC_BASE, a, 0, ADC_CTL_IE | ADC_CTL_END | ADC_CTL_CH0);
-	ADCSequenceEnable(ADC_BASE, a);
-}
-
-long GetADCValue(char a) {
-	unsigned long ADCValue = 0;
-	ADCProcessorTrigger(ADC_BASE, a ); 
-	while(!ADCIntStatus(ADC_BASE, a, false)); 
-	ADCSequenceDataGet(ADC_BASE, a, &ADCValue);
-	return ADCValue;
-}
 
 
-char codeSelect(){ return GPIOPinRead(GPIO_PORTA_BASE, GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_4 | GPIO_PIN_5) }
+char codeSelect(){ return GPIOPinRead(GPIO_PORTA_BASE, GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_4 | GPIO_PIN_5); }
 int main(void)
 {		
 	LockoutProtection();

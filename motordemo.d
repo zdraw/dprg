@@ -1,9 +1,0 @@
-motordemo.o: MotorDemo.c
-motordemo.o: C:\working_dir\Robotathon2010\StellarisWare\inc/hw_types.h
-motordemo.o: C:\working_dir\Robotathon2010\StellarisWare\inc/hw_memmap.h
-motordemo.o: C:\working_dir\Robotathon2010\StellarisWare\utils/uartstdio.h
-motordemo.o: C:\working_dir\Robotathon2010\StellarisWare\driverlib/gpio.h
-motordemo.o: C:\working_dir\Robotathon2010\StellarisWare\driverlib/sysctl.h
-motordemo.o: C:\working_dir\Robotathon2010\RASLib\include\RASLib/motor.h
-motordemo.o: C:\working_dir\Robotathon2010\StellarisWare\driverlib/pwm.h
-motordemo.o: dprg.h
