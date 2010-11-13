@@ -2,19 +2,22 @@
 ### Preparing for ADS-LD.
 ### Creating ADS-LD Command Line
 ### List of Objects: adding '"linefollow.o"'
+### List of Objects: adding '"tabletop.o"'
+### List of Objects: adding '"squaredance.o"'
+### List of Objects: adding '"motorpid.o"'
 ### List of Objects: adding '"uartstdio.o"'
 ### List of Objects: adding '"..\StellarisWare\driverlib\rvmdk\driverlib.lib"'
 ### List of Objects: adding '"..\RASLib\Debug\raslib.lib"'
 ### List of Objects: adding '"startup.o"'
 ### List of Objects: adding '"dprg.o"'
 ### ADS-LD Command completed:
---cpu Cortex-M3 "linefollow.o" "uartstdio.o" "..\StellarisWare\driverlib\rvmdk\driverlib.lib" "..\RASLib\Debug\raslib.lib" "startup.o" "dprg.o" --library_type=microlib --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--cpu Cortex-M3 "linefollow.o" "tabletop.o" "squaredance.o" "motorpid.o" "uartstdio.o" "..\StellarisWare\driverlib\rvmdk\driverlib.lib" "..\RASLib\Debug\raslib.lib" "startup.o" "dprg.o" --library_type=microlib --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
 --info sizes --info totals --info unused --info veneers 
  --list ".\dprg.map" -o "dprg.axf"### Preparing Environment (PrepEnvAds)
 ### ADS-LD Output File: 'dprg.axf'
 ### ADS-LD Command File: 'dprg.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'dprg.lnp', Handle=0x00000234
+### Creating CmdFile 'dprg.lnp', Handle=0x00000660
 ### Writing '.lnp' file
 ### ADS-LD Command file 'dprg.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

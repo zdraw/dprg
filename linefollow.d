@@ -18,3 +18,4 @@ linefollow.o: ..\StellarisWare\driverlib/timer.h
 linefollow.o: ..\RASLib\include\RASLib/timer.h
 linefollow.o: C:\Keil\ARM\RV31\INC\stdlib.h
 linefollow.o: C:\Keil\ARM\RV31\INC\ctype.h
+linefollow.o: motorPID.h
