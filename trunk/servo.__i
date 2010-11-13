@@ -1,1 +1,0 @@
--c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork -I..\StellarisWare -I "C:\Program Files\Keil\ARM\INC" -I "C:\Program Files\Keil\ARM\INC\Luminary" -o "servo.o" --omf_browse "servo.crf" --depend "servo.d" "RASLib\servo.c"
