@@ -13,3 +13,4 @@ dprg.o: ..\StellarisWare\driverlib/pwm.h
 dprg.o: ..\RASLib\include\RASLib/uart.h
 dprg.o: ..\RASLib\include\RASLib/motor.h
 dprg.o: ..\RASLib\include\RASLib/encoder.h
+dprg.o: TableTop.h
