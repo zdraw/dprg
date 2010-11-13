@@ -1,4 +1,7 @@
+#include "inc/hw_types.h"
 #include "motorPID.h"
+#include "RASLib/motor.h"
+#include "RASLib/timer.h"
 
 int PID(int error, int* accum_error, int* last_error, int p, int i, int d)
 {
@@ -22,4 +25,19 @@ signed char saturate(signed long value)
 	if (value < MIN)
 		return MIN;
 	return value;
+}
+
+void AccelerateToMax(void) {
+	power_t motor1 = 0;
+	power_t motor2 = 0;
+	
+	while(1) {
+		motor1++;
+		motor2++;
+		SetMotorPowers(motor1, motor2);
+		if(motor1 == MAX || motor2 == MAX) {
+			break;
+		}
+		Wait(10);
+	}
 }

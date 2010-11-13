@@ -390,6 +390,11 @@
               <FileType>1</FileType>
               <FilePath>.\linefollow.c</FilePath>
             </File>
+            <File>
+              <FileName>TableTop.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\TableTop.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

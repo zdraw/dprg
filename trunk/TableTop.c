@@ -10,6 +10,7 @@
 #include "driverlib/uart.h"
 
 #include "motorPID.h"
+#include "sonar.h"
 				   
 unsigned long ulADCValue1;
 int getDistance(void) // Make this function work. Gets value from IR sensor
@@ -57,4 +58,12 @@ void crossTable(void)
 	while ( GetEncoderCount(ENCODER_0) > 0 );
 
 	SetMotorPowers(0,0);			
+}
+
+void CubeAttack(void) {
+	Initialize_Sonar();
+	UARTprintf("Testing Sonar\n");
+	while(1) {
+		UARTprintf("Sonar: %d\r", Sonar_Get());
+	}
 }
