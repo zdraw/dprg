@@ -1,4 +1,5 @@
-#include "TableTop.h"
+#include "TableTop.h"				 
+#include "inc/hw_memmap.h"             // input/output over UART
 #include "inc/hw_types.h"		// tBoolean
 #include "utils/uartstdio.h"	// input/output over UART
 #include "driverlib/uart.h"		// input/output over UART
@@ -8,6 +9,9 @@
 #include "RASLib/motor.h"
 #include "driverlib/uart.h"
 
+#include "motorPID.h"
+				   
+unsigned long ulADCValue1;
 int getDistance(void) // Make this function work. Gets value from IR sensor
 {
 	int distance;

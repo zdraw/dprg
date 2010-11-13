@@ -14,6 +14,8 @@
 
 
 extern void LineFollow(void);
+extern void SquareDance(void);
+
 
 void InitializeADC(char a) {
 	ADCSequenceConfigure(ADC_BASE,a, ADC_TRIGGER_PROCESSOR, 0);
@@ -26,6 +28,7 @@ long GetADCValue(char a) {
 	ADCProcessorTrigger(ADC_BASE, a ); 
 	while(!ADCIntStatus(ADC_BASE, a, false)); 
 	ADCSequenceDataGet(ADC_BASE, a, &ADCValue);
+	Wait(10);
 	return ADCValue;
 }
 
@@ -49,7 +52,7 @@ void waitForStartup(){
 }
 
 
-char codeSelect(){ return GPIOPinRead(GPIO_PORTA_BASE, GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_4 | GPIO_PIN_5); }
+char codeSelect(){ return GPIOPinRead(GPIO_PORTA_BASE, GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_4 | GPIO_PIN_5) >> 2; }
 int main(void)
 {		
 	LockoutProtection();
@@ -67,15 +70,17 @@ int main(void)
 
 	// Init motors (whine...)
 	InitializeMotors(true, true);
-	InitializeEncoders(true, false);
+	InitializeEncoders(false, true);
+
+	UARTprintf("%d\n", codeSelect());
 
     // Now we start the fun
 	switch(codeSelect()){
 		case 1:
-		    //lineFollow();
+		    LineFollow();
 			break;
 		case 2:
-		    //squareDance();
+		    SquareDance();
 			break;
 		/*case 4:
 		    figureEight();
