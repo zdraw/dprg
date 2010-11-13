@@ -395,6 +395,16 @@
               <FileType>1</FileType>
               <FilePath>.\TableTop.c</FilePath>
             </File>
+            <File>
+              <FileName>squaredance.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\squaredance.c</FilePath>
+            </File>
+            <File>
+              <FileName>motorPID.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\motorPID.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
