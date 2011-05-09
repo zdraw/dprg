@@ -7,7 +7,6 @@ sonar.o: ..\StellarisWare\driverlib/uart.h
 sonar.o: ..\StellarisWare\driverlib/sysctl.h
 sonar.o: ..\StellarisWare\utils/uartstdio.h
 sonar.o: ..\RASLib\include\RASLib/init.h
-sonar.o: ..\RASLib\include\RASLib/encoder.h
 sonar.o: ..\RASLib\include\RASLib/linesensor.h
 sonar.o: ..\StellarisWare\inc/hw_ints.h
 sonar.o: ..\StellarisWare\inc/hw_memmap.h

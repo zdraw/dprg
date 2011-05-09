@@ -4,7 +4,6 @@ linefollow.o: ..\StellarisWare\driverlib/uart.h
 linefollow.o: ..\StellarisWare\driverlib/sysctl.h
 linefollow.o: ..\StellarisWare\utils/uartstdio.h
 linefollow.o: ..\RASLib\include\RASLib/init.h
-linefollow.o: ..\RASLib\include\RASLib/encoder.h
 linefollow.o: ..\RASLib\include\RASLib/motor.h
 linefollow.o: ..\StellarisWare\driverlib/pwm.h
 linefollow.o: ..\RASLib\include\RASLib/uart.h
@@ -18,4 +17,5 @@ linefollow.o: ..\StellarisWare\driverlib/timer.h
 linefollow.o: ..\RASLib\include\RASLib/timer.h
 linefollow.o: C:\Keil\ARM\RV31\INC\stdlib.h
 linefollow.o: C:\Keil\ARM\RV31\INC\ctype.h
+linefollow.o: encoder.h
 linefollow.o: motorPID.h

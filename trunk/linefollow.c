@@ -2,7 +2,6 @@
 #include "driverlib/uart.h"		// input/output over UART
 #include "utils/uartstdio.h"	// input/output over UART
 #include "RASLib/init.h"
-#include "RASLib/encoder.h"
 #include "RASLib/motor.h"
 #include "RASLib/uart.h"
 #include "RASLib/linesensor.h"
@@ -10,6 +9,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+#include "encoder.h"
 #include "motorPID.h"
 
 #define PRINT_LS(ls)	for(i=0; i<NUM_SENSORS; ++i)\
@@ -59,6 +59,7 @@ void LineFollow(void)
 	static signed int last_error;
 	signed int LeftMotor;
 	signed int RightMotor;
+	int i;
 
 	LockoutProtection();  //lockout protection
 	InitializeMCU();
@@ -70,7 +71,12 @@ void LineFollow(void)
 
 	while(1)
 	{
-		pid = PID(getLineError(ReadLineSensor(), LEFT), &accum_error, &last_error, 30, 0, 20);
+		linesensor_t raw = ReadLineSensor();
+		for(i=0; i<8; i++) {
+			UARTprintf("%c", (raw&(1<<i) ? '1' : '0'));
+		}
+		UARTprintf("\r");
+		pid = PID(getLineError(raw, LEFT), &accum_error, &last_error, 30, 0, 20);
 	
 		LeftMotor = saturate(MAX + pid);
 		RightMotor = saturate(MAX - pid);
