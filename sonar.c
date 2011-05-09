@@ -5,7 +5,6 @@
 #include "driverlib/uart.h"
 #include "utils/uartstdio.h"	// input/output over UART
 #include "RASLib/init.h"
-#include "RASLib/encoder.h"
 #include "RASLib/linesensor.h"
 #include "RASLib/motor.h"
 #include "RASLib/servo.h"

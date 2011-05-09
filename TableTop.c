@@ -4,13 +4,13 @@
 #include "utils/uartstdio.h"	// input/output over UART
 #include "RASLib/init.h"
 #include "driverlib/adc.h"		// ADC functions
-#include "RASLib/encoder.h"
 #include "RASLib/motor.h"
 #include "driverlib/uart.h"
 #include "RASLib/timer.h"
 
 #include "motorPID.h"
 #include "sonar.h"
+#include "encoder.h"
 				   
 unsigned long ulADCValue1;
 int getDistance(void) // Make this function work. Gets value from IR sensor

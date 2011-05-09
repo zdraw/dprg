@@ -1,5 +1,5 @@
-#define MAX 60
-#define MIN -60
+#define MAX 127
+#define MIN -128
 #define LEFT 0
 #define RIGHT 1
 

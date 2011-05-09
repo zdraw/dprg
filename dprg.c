@@ -73,18 +73,19 @@ int main(void)
 	InitializeEncoders(false, true);
 
 	UARTprintf("%d\n", codeSelect());
-
+	LineFollow();
+	while(1);
     // Now we start the fun
-	switch(codeSelect()){
+	switch(2){
 		case 1:
 		    LineFollow();
 			break;
 		case 2:
 		    SquareDance();
 			break;
-		/*case 4:
+		case 4:
 		    figureEight();
-			break;*/
+			break;
 		case 9:
 		    crossTable();
 			break;

@@ -7,8 +7,8 @@ squaredance.o: ..\StellarisWare\driverlib/uart.h
 squaredance.o: ..\StellarisWare\driverlib/sysctl.h
 squaredance.o: ..\RASLib\include\RASLib/init.h
 squaredance.o: ..\StellarisWare\driverlib/adc.h
-squaredance.o: ..\RASLib\include\RASLib/encoder.h
 squaredance.o: ..\RASLib\include\RASLib/motor.h
 squaredance.o: ..\StellarisWare\driverlib/pwm.h
 squaredance.o: ..\RASLib\include\RASLib/timer.h
+squaredance.o: encoder.h
 squaredance.o: motorPID.h
